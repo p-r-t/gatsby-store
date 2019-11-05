@@ -4,7 +4,6 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
 import './layout.css'
-import stripeLogo from '../images/powered_by_stripe.svg'
 
 const Layout = ({ children }) => (
   <StaticQuery

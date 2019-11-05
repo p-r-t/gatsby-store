@@ -19,7 +19,7 @@ const buttonStyles = {
   outline: 'none',
   padding: '12px',
   boxShadow: '2px 5px 10px rgba(0,0,0,.1)',
-  backgroundColor: 'rgb(255, 178, 56)',
+  backgroundColor: '#DF8039',
   borderRadius: '6px',
   letterSpacing: '1.5px',
 }
@@ -39,8 +39,8 @@ const SkuCard = class extends React.Component {
     event.preventDefault()
     const { error } = await this.props.stripe.redirectToCheckout({
       items: [{ sku, quantity }],
-      successUrl: `${window.location.origin}/page-2/`,
-      cancelUrl: `${window.location.origin}/advanced`,
+      successUrl: `${window.location.origin}/`,
+      cancelUrl: `${window.location.origin}/`,
     })
 
     if (error) {
