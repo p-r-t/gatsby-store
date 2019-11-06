@@ -36,6 +36,7 @@ class Skus extends Component {
                   id
                   currency
                   price
+                  image
                   attributes {
                     name
                   }

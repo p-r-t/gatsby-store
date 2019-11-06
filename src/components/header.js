@@ -1,8 +1,12 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
-import Image from '../components/image'
 import nansenLogo from '../images/nansen-icon.png'
+
+const iconStyles={
+ height: '72px',
+ width: '59px'
+}
 
 const Header = ({ siteTitle }) => (
   <div
@@ -18,7 +22,7 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <img src={nansenLogo} alt="Nansen Icon" style={{height: 72},{width: 59}} />
+      <img src={nansenLogo} alt="Nansen Icon" style={iconStyles} />
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"

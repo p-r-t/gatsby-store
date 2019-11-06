@@ -3,7 +3,7 @@ import React from 'react'
 const cardStyles = {
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'space-around',
+  
   alignItems: 'flex-start',
   padding: '1rem',
   marginBottom: '1rem',
@@ -54,6 +54,7 @@ const SkuCard = class extends React.Component {
       <div style={cardStyles}>
         <h4>{sku.attributes.name}</h4>
         <p>Price: {formatPrice(sku.price, sku.currency)}</p>
+        <img alt={sku.attributes.name} src={sku.image}></img>
         <button
           style={buttonStyles}
           onClick={event => this.redirectToCheckout(event, sku.id)}
